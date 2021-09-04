@@ -5,7 +5,6 @@ try:
     videoUrl = input("Please enter the video url: \n")
     videoId = videoUrl[videoUrl.index("v=") + 2 : ]
     srt = YouTubeTranscriptApi.get_transcript(f"{videoId}")
-    # print(srt)
     word = input("Please enter the word you are looking for: \n")
     print("Link(s): ")
     for index in range(len(srt)):
